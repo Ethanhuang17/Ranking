@@ -97,11 +97,11 @@ public class RankingActivity extends AppCompatActivity {
     }
 
     private double getaverage(ArrayList<ArrayList<Double>> x) {
-        double total = 0;
+        double total = 0.0;
         int count = 0;
         for (ArrayList<Double> each : x) {
-            total = total + each.get(4);
-            count++;
+            total = each.get(4) + total + 0.0001;
+            count = count + 1;
         }
         if (count != 0) {
             return (total / count);
