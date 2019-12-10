@@ -106,7 +106,7 @@ public class Draftdata extends AppCompatActivity {
                 deads = Double.parseDouble(stringdead);
                 String stringassist = assist.getText().toString();
                 assists = Double.parseDouble(stringassist);
-                kdas = ((kills + assists) / deads);
+                kdas = ((kills + assists) / deads) + 0.0000001;
                 kda.setText(kdas.toString());
                 uploadclicked();
             }

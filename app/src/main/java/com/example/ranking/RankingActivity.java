@@ -100,7 +100,7 @@ public class RankingActivity extends AppCompatActivity {
         double total = 0.0;
         int count = 0;
         for (ArrayList<Double> each : x) {
-            total = each.get(4) + total + 0.0001;
+            total+=each.get(4);
             count = count + 1;
         }
         if (count != 0) {
@@ -142,11 +142,11 @@ public class RankingActivity extends AppCompatActivity {
         array.add(getaverage(antimage));
         array.add(getaverage(windranger));
         sort(array);
-        first.setText(kda.get(array.get(0)) + " : " + (array.get(0)).toString());
-        second.setText(kda.get(array.get(1)) + " : " + (array.get(1)).toString());
-        third.setText(kda.get(array.get(2)) + " : " + (array.get(2)).toString());
-        fourth.setText(kda.get(array.get(3)) + " : " + (array.get(3)).toString());
-        fifth.setText(kda.get(array.get(4)) + " : " + (array.get(4)).toString());
+        first.setText(kda.get(array.get(0)) + " : " + roundDown5(array.get(0)).toString());
+        second.setText(kda.get(array.get(1)) + " : " + roundDown5(array.get(1)).toString());
+        third.setText(kda.get(array.get(2)) + " : " + roundDown5(array.get(2)).toString());
+        fourth.setText(kda.get(array.get(3)) + " : " + roundDown5(array.get(3)).toString());
+        fifth.setText(kda.get(array.get(4)) + " : " + roundDown5(array.get(4)).toString());
     }
     public static Double roundDown5(Double number) {
         double real = (double) number;

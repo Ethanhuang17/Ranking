@@ -23,42 +23,50 @@
                 <TextView
                     android:id="@+id/first"
                     android:layout_width="match_parent"
-                    android:layout_height="123dp"
-                    android:text="TextView"
+                    android:layout_height="93dp"
+                    android:hint="First place"
+                    android:background="@drawable/edit_round"
                     android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/second"
                     android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:text="TextView"
+                    android:layout_height="93dp"
+                    android:hint="Second place"
+                    android:background="@drawable/edit_round"
                     android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/third"
                     android:layout_width="match_parent"
-                    android:layout_height="131dp"
-                    android:text="TextView"
+                    android:layout_height="93dp"
+                    android:background="@drawable/edit_round"
+                    android:hint="Third place"
                     android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/fourth"
                     android:layout_width="match_parent"
-                    android:layout_height="131dp"
-                    android:text="TextView"
+                    android:layout_height="93dp"
+                    android:background="@drawable/edit_round"
+                    android:hint="Fourth place"
                     android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/fifth"
                     android:layout_width="match_parent"
-                    android:layout_height="121dp"
-                    android:text="TextView"
+                    android:layout_height="93dp"
+                    android:hint="Fifth place"
+                    android:background="@drawable/edit_round"
                     android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/get"
+                    android:background="@drawable/button_round"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="50sp"
                     android:text="Get" />
 
             </LinearLayout>
